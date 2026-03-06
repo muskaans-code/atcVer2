@@ -1,0 +1,395 @@
+/* =========================================
+   ROOT BRAND COLORS
+========================================= */
+:root {
+  --primary: #1e3a8a;
+  --accent: #f59e0b;
+  --dark: #0f172a;
+  --light-bg: #f1f5f9;
+  --white: #ffffff;
+  --text-dark: #1f2937;
+  --text-muted: #6b7280;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--light-bg);
+  color: var(--text-dark);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+.navbar {
+  background: var(--white);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  padding: 16px 0;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--primary) !important;
+}
+
+.nav-link {
+  font-weight: 500;
+  margin-left: 18px;
+  color: var(--text-dark) !important;
+}
+
+.nav-link:hover {
+  color: var(--accent) !important;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+.btn-primary {
+  background: var(--primary);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 22px;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background: var(--accent);
+  transform: translateY(-2px);
+}
+
+.btn-dark {
+  background: var(--dark);
+  border-radius: 8px;
+}
+
+.btn-dark:hover {
+  background: var(--primary);
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+
+  background:
+    linear-gradient(rgba(30, 58, 138, 0.65), rgba(30, 64, 175, 0.65)),
+    url('hero.jpg') center/cover no-repeat;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  letter-spacing: -1px;
+}
+
+.hero .lead {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* =========================================
+   PRODUCTS DROPDOWN PANEL
+========================================= */
+
+.stone-dropdown{
+width:260px;
+border-radius:10px;
+box-shadow:0 15px 40px rgba(0,0,0,0.1);
+}
+
+.stone-dropdown .dropdown-item{
+padding:10px 12px;
+font-weight:500;
+color:#374151;
+}
+
+.stone-dropdown .dropdown-item:hover{
+background:#f1f5f9;
+color:#1e3a8a;
+}
+
+/* =========================================
+   SECTION BASE STYLING
+========================================= */
+section {
+  padding: 110px 0;
+  position: relative;
+}
+
+/* Light Section */
+.section-light {
+  background: var(--white);
+}
+
+/* Soft Gray Section */
+.section-soft {
+  background: var(--light-bg);
+}
+
+/* Dark Section */
+.section-dark {
+  background: var(--dark);
+  color: white;
+}
+
+.section-dark h2 {
+  color: white !important;
+}
+
+/* Section Divider Line */
+section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 80px;
+  height: 4px;
+  background: var(--accent);
+  transform: translateX(-50%);
+}
+
+/* =========================================
+   CARDS
+========================================= */
+.card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.card-body p {
+  flex-grow: 1;
+  margin-bottom: 20px;
+  color: var(--text-muted);
+}
+
+/* =========================================
+   ABOUT & TESTIMONIAL BOXES
+========================================= */
+.info-box {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 14px;
+  height: 100%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.info-box:hover {
+  border-left: 5px solid var(--accent);
+  transform: translateY(-5px);
+}
+
+/* =========================================
+   CONTACT SECTION
+========================================= */
+form .form-control {
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+form .form-control:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.15rem rgba(245,158,11,0.2);
+}
+
+#contact {
+  background: var(--white);
+}
+
+.contact-info-box {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  box-shadow: 0 20px 40px rgba(59,130,246,0.25);
+  color: white;
+}
+
+.contact-form-box {
+  transition: 0.3s ease;
+}
+
+.contact-form-box:hover {
+  box-shadow: 0 25px 50px rgba(0,0,0,0.08);
+}
+
+.contact-form-box .form-control {
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.contact-form-box .form-control:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.15rem rgba(245,158,11,0.2);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+footer {
+  background: var(--dark);
+  color: #cbd5e1;
+  padding: 35px 0;
+  font-size: 0.9rem;
+}
+
+/* TESTIMONIAL CARDS FIX */
+
+#testimonials .info-box {
+  background: #ffffff;
+  color: #1e293b;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+#testimonials .info-box p {
+  color: #475569;
+}
+
+#testimonials .info-box:hover {
+  transform: translateY(-8px);
+}
+
+/* PRODUCT PAGE STYLING */
+
+.product-page{
+padding:120px 0 40px;
+background:#f8f9fa;
+}
+
+.product-page h1{
+color:#003a8f;
+font-weight:700;
+margin-bottom:20px;
+}
+
+.product-page p{
+font-size:16px;
+color:#555;
+line-height:1.7;
+}
+
+/* COMMON PRODUCT SECTIONS */
+
+.product-features,
+.product-applications,
+.product-specifications,
+.product-benefits{
+padding:60px 0;
+background:#ffffff;
+border-bottom:1px solid #eee;
+}
+
+.product-features h2,
+.product-applications h2,
+.product-specifications h2,
+.product-benefits h2{
+color:#003a8f;
+font-weight:600;
+margin-bottom:25px;
+}
+
+/* LIST STYLING */
+
+.product-features ul,
+.product-applications ul,
+.product-specifications ul{
+list-style:none;
+padding-left:0;
+}
+
+.product-features li,
+.product-applications li,
+.product-specifications li{
+padding:10px 0;
+border-bottom:1px solid #eee;
+font-size:15px;
+color:#444;
+}
+
+.product-features li:last-child,
+.product-applications li:last-child,
+.product-specifications li:last-child{
+border-bottom:none;
+}
+
+/* BENEFITS PARAGRAPH */
+
+.product-benefits p{
+font-size:16px;
+color:#555;
+line-height:1.8;
+max-width:800px;
+}
+
+/* CONTAINER WIDTH IMPROVEMENT */
+
+.product-page .container,
+.product-features .container,
+.product-applications .container,
+.product-specifications .container,
+.product-benefits .container{
+max-width:1000px;
+}
+
+/* HERO SLIDER */
+
+.hero-img{
+height:100vh;
+object-fit:cover;
+}
+
+.carousel-caption{
+top:50%;
+transform:translateY(-50%);
+bottom:auto;
+}
+
+.carousel-caption h1{
+font-size:3rem;
+}
+
+.carousel-caption p{
+font-size:1.2rem;
+}
+
+.carousel-item::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+}
